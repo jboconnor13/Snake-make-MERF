@@ -18,7 +18,7 @@ sample_id: "SampleID"
 # Analysis details
 # TODO there are issues with keeping html output in same folder... fix later
 ##############################################################################
-out: "random-forest/TEST/HDL-Demo/"
+out: "output/"
 report_name: "HDL-Demo.html"
 
 response_var: "HDL" # Variable you are trying to explain
