@@ -47,7 +47,7 @@ def main(scnic_folder, biom_file_name):
 
     # load biom table, convert samples to rows; OTUs/ASVs as columns (for
     # adding to large df convert to df and add SCNIC modules to dataframe
-    biom_table = load_table(scnic_folder + "modules_output/real-feature-table.biom")
+    biom_table = load_table(scnic_folder + "modules_output/collapsed.biom")
     biom_table = biom_table.transpose()
     df_scnic = biom_table.to_dataframe().rename_axis(sample_id)
     df_scnic.to_csv(scnic_folder + "SCNIC-dim-reduction-for-workflow.txt",
